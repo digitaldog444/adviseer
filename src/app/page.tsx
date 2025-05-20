@@ -30,6 +30,14 @@ export default function Home() {
               Baphomet
             </Link>
           </li>
+          <li>
+            <Link
+              className="text-amber-500 hover:text-amber-600"
+              href="/tree-of-life"
+            >
+              Tree of Life
+            </Link>
+          </li>
         </ul>
       </section>
     </>
