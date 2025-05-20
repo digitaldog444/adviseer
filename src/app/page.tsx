@@ -22,6 +22,14 @@ export default function Home() {
               Why does the universe repeat itself with a simulation?
             </Link>
           </li>
+          <li>
+            <Link
+              className="text-amber-500 hover:text-amber-600"
+              href="/baphomet"
+            >
+              Baphomet
+            </Link>
+          </li>
         </ul>
       </section>
     </>
