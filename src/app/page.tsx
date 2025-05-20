@@ -38,6 +38,14 @@ export default function Home() {
               Tree of Life
             </Link>
           </li>
+          <li>
+            <Link
+              className="text-amber-500 hover:text-amber-600"
+              href="/wise-old-man"
+            >
+              Wise Old Man
+            </Link>
+          </li>
         </ul>
       </section>
     </>
