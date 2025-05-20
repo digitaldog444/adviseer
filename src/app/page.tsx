@@ -8,7 +8,9 @@ export default function Home() {
         <Image alt="Ramiel" src="/ramiel.jpg" width={1920} height={1080} />
       </section>
       <section>
-        <h1 className="text-3xl font-bold text-center">Adviseer's Website</h1>
+        <h1 className="text-3xl font-bold text-center">
+          Adviseer&apos;s Website
+        </h1>
         <p className="text-center">Welcome to my blog.</p>
         <h2 className="text-xl mt-2 text-center">Articles</h2>
         <ul className="list-disc text-center">
