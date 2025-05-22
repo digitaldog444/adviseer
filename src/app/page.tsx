@@ -46,6 +46,14 @@ export default function Home() {
               Wise Old Man
             </Link>
           </li>
+          <li>
+            <Link
+              className="text-amber-500 hover:text-amber-600"
+              href="/meaning-of-existence"
+            >
+              The Meaning of Existence
+            </Link>
+          </li>
         </ul>
       </section>
     </>
