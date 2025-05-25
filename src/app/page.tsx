@@ -54,6 +54,14 @@ export default function Home() {
               The Meaning of Existence
             </Link>
           </li>
+          <li>
+            <Link
+              className="text-amber-500 hover:text-amber-600"
+              href="/religious-fail-satan"
+            >
+              Religious fail of Satan
+            </Link>
+          </li>
         </ul>
       </section>
     </>
