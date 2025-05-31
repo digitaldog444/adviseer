@@ -62,6 +62,14 @@ export default function Home() {
               Religious fail of Satan
             </Link>
           </li>
+          <li>
+            <Link
+              className="text-amber-500 hover:text-amber-600"
+              href="/universe-is-sim"
+            >
+              Are We Living in a Simuatlion?
+            </Link>
+          </li>
         </ul>
       </section>
     </>
