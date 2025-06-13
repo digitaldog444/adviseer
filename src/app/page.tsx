@@ -70,6 +70,22 @@ export default function Home() {
               Are We Living in a Simuatlion?
             </Link>
           </li>
+          <li>
+            <Link
+              className="text-amber-500 hover:text-amber-600"
+              href="/laplace"
+            >
+              Laplace's Demon
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-amber-500 hover:text-amber-600"
+              href="/laplace2"
+            >
+              What happens once we create Laplace's demon.
+            </Link>
+          </li>
         </ul>
       </section>
     </>
