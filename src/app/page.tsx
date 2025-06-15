@@ -86,6 +86,11 @@ export default function Home() {
               What happens once we create Laplace's demon.
             </Link>
           </li>
+          <li>
+            <Link className="text-amber-500 hover:text-amber-600" href="/rrsim">
+              Recursive Reproductive Simulation (RRSim)
+            </Link>
+          </li>
         </ul>
       </section>
     </>
