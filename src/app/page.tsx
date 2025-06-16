@@ -262,7 +262,7 @@ const AdviseerHomepage: React.FC = () => {
             </p>
             <div className="flex items-center justify-center space-x-4 mb-12">
               <Link
-                href="https;//youtube.com/@adviseer"
+                href="https://youtube.com/@adviseer"
                 className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg"
               >
                 🎥 Latest Videos
