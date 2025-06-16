@@ -403,6 +403,14 @@ const HomePage: React.FC = () => {
                   Recursive Reproductive Simulation (RRSim)
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/archetypes"
+                  className="text-amber-500 hover:text-amber-600"
+                >
+                  Core Archetypes
+                </Link>
+              </li>
             </ul>
             ;
             <div className="mt-8 pt-8 border-t border-white/10 text-center">
