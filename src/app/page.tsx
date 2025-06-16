@@ -70,6 +70,11 @@ const HomePage: React.FC = () => {
       description:
         "Built on rigorous mathematical principles and validated through extensive research in computational theory.",
     },
+    {
+      icon: <Lightbulb className="h-8 w-8 text-amber-500" />,
+      title: "Adviseer",
+      description: "My name is Adviseer.",
+    },
   ];
 
   const applications = [
