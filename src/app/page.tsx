@@ -322,7 +322,7 @@ const HomePage: React.FC = () => {
                 </a>
               </div>
             </div>
-            <ul className="list-disc text-center">
+            <ul className="text-center">
               <li>
                 <Link
                   className="text-amber-500 hover:text-amber-600"
