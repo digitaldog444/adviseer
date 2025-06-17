@@ -505,3 +505,5 @@ const LaplacesDemon: React.FC = () => {
     </div>
   );
 };
+
+export default LaplacesDemon;
