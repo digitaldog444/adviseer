@@ -487,6 +487,14 @@ const ItemList = () => {
           The Genetic Toxin Response
         </Link>
       </li>
+      <li>
+        <Link
+          href="/group-selection"
+          className="text-amber-500 hover:text-amber-600"
+        >
+          Group Selection
+        </Link>
+      </li>
     </ul>
   );
 };
