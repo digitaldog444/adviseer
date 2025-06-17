@@ -34,11 +34,11 @@ const GroupSelectionInfographic: React.FC = () => {
                 <div className="text-xl font-bold text-slate-700 mb-4">
                   Individual Selection
                 </div>
-                <p className="mb-4">
+                <p className="mb-4 text-slate-700">
                   Traits evolve because they benefit the individual organism's
                   survival and reproduction
                 </p>
-                <p>
+                <p className="text-slate-700">
                   <strong>Example:</strong> Faster running speed helps an
                   individual escape predators
                 </p>
@@ -53,11 +53,11 @@ const GroupSelectionInfographic: React.FC = () => {
                 <div className="text-xl font-bold text-slate-700 mb-4">
                   Group Selection
                 </div>
-                <p className="mb-4">
+                <p className="mb-4 text-slate-700">
                   Traits evolve because they benefit the group, even if costly
                   to individuals
                 </p>
-                <p>
+                <p className="text-slate-700">
                   <strong>Example:</strong> Alarm calls that warn others but
                   attract predator attention
                 </p>
@@ -113,7 +113,7 @@ const GroupSelectionInfographic: React.FC = () => {
                 <div className="text-xl font-bold text-slate-700 mb-3">
                   🐝 Eusocial Insects
                 </div>
-                <p>
+                <p className="text-slate-700">
                   Worker ants and bees sacrifice reproduction to help the
                   colony. The sterile worker caste benefits the group but not
                   the individual.
@@ -124,7 +124,7 @@ const GroupSelectionInfographic: React.FC = () => {
                 <div className="text-xl font-bold text-slate-700 mb-3">
                   🚨 Alarm Calls
                 </div>
-                <p>
+                <p className="text-slate-700">
                   Prairie dogs give warning calls when predators approach,
                   helping the group but potentially attracting danger to
                   themselves.
@@ -135,7 +135,7 @@ const GroupSelectionInfographic: React.FC = () => {
                 <div className="text-xl font-bold text-slate-700 mb-3">
                   🦠 Bacterial Cooperation
                 </div>
-                <p>
+                <p className="text-slate-700">
                   Some bacteria produce costly public goods (like
                   iron-scavenging molecules) that benefit the entire bacterial
                   community.
@@ -146,7 +146,7 @@ const GroupSelectionInfographic: React.FC = () => {
                 <div className="text-xl font-bold text-slate-700 mb-3">
                   👥 Human Cooperation
                 </div>
-                <p>
+                <p className="text-slate-700">
                   Large-scale cooperation in human societies may have evolved
                   through group selection for cooperative groups.
                 </p>
