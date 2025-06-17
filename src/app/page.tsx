@@ -495,6 +495,11 @@ const ItemList = () => {
           Group Selection
         </Link>
       </li>
+      <li>
+        <Link href="/laplaces" className="text-amber-500 hover:text-amber-600">
+          Laplace's Demon revisited
+        </Link>
+      </li>
     </ul>
   );
 };
