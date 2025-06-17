@@ -1,4 +1,4 @@
-// pages/index.tsx
+"use client";
 import { useEffect, useRef } from "react";
 import Head from "next/head";
 import { Inter } from "next/font/google";
