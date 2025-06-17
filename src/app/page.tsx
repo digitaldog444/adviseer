@@ -479,6 +479,14 @@ const ItemList = () => {
           The 4 core archetypes (continued)
         </Link>
       </li>
+      <li>
+        <Link
+          href="/toxin-response"
+          className="text-amber-500 hover:text-amber-600"
+        >
+          The Genetic Toxin Response
+        </Link>
+      </li>
     </ul>
   );
 };
