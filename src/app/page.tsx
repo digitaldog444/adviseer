@@ -471,6 +471,14 @@ const ItemList = () => {
           Recursive Reproductive Simulation Explained
         </Link>
       </li>
+      <li>
+        <Link
+          href="/archetypes2"
+          className="text-amber-500 hover:text-amber-600"
+        >
+          The 4 core archetypes (continued)
+        </Link>
+      </li>
     </ul>
   );
 };
