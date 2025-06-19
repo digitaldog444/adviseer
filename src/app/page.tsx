@@ -500,6 +500,14 @@ const ItemList = () => {
           Laplace's Demon revisited
         </Link>
       </li>
+      <li>
+        <Link
+          href="/subjucation"
+          className="text-amber-500 hover:text-amber-600"
+        >
+          AI's Quiet Subjucation of Humanity
+        </Link>
+      </li>
     </ul>
   );
 };

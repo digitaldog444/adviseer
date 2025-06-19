@@ -1,10 +1,10 @@
+"use client";
 // You can directly use this code in a Next.js (or any React) project with Tailwind CSS.
-// Ensure you have lucide-react and framer-motion installed:
-// npm install lucide-react framer-motion
+// Ensure you have lucide-react installed:
+// npm install lucide-react
 
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import type { NextPage } from "next";
-import { motion, useInView } from "framer-motion";
 import {
   Cpu,
   Link,
@@ -14,24 +14,6 @@ import {
   ArrowDown,
   ExternalLink,
 } from "lucide-react";
-
-// Helper component for animated sections
-const AnimatedSection = ({ children }: { children: React.ReactNode }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
-
-  return (
-    <motion.section
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="py-20 px-4 sm:px-6 lg:px-8"
-    >
-      {children}
-    </motion.section>
-  );
-};
 
 // Stage Card Component
 const StageCard = ({
@@ -43,7 +25,7 @@ const StageCard = ({
   title: string;
   description: string;
 }) => (
-  <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-blue-500/20 shadow-lg shadow-blue-900/10 hover:border-blue-500/50 transition-all duration-300">
+  <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-blue-500/20 shadow-lg shadow-blue-900/10 hover:border-blue-500/50 transition-all duration-300 h-full">
     <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-blue-900/50 border border-blue-500/30">
       {icon}
     </div>
@@ -56,43 +38,29 @@ const Home: NextPage = () => {
   return (
     <div className="bg-gray-900 text-gray-200 font-sans">
       {/* The <Head> component from Next.js has been removed as it's not needed 
-        for this component preview and can cause compilation errors in this environment. 
-        In a full Next.js application, you would manage the document head using 
-        Next.js's built-in metadata options.
-      */}
+            for this component preview and can cause compilation errors in this environment. 
+            In a full Next.js application, you would manage the document head using 
+            Next.js's built-in metadata options.
+        */}
 
       <main className="relative overflow-x-hidden">
-        {/* Background Gradient & Grid */}
+        {/* Background Gradient & Grid - Stretches to cover all content */}
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-gray-900 to-black z-0">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48Zz48cGF0aCBmaWxsPSIjMDgwQzE0IiBmaWxsLW9wYWNpdHk9IjAuMDUiIGQ9Ik0wIDEyTDEyIDBMMjQgMTJMMTIgMjRMMC AxMlpNMTIgMTJMMjQgMEwzNiAxMkwyNCAyNFoxMiAxMlpNMjQgMTJMMzYgMEw0MCA0TDI4IDE2TDI0IDEyWk0yOCAyOEw0MCAxNkwzNiAyMEwyNCAzMkwyOCAyOFpNMCAyOEwxMiA0MEwyNCAyOEwxMiAxNkwwIDI4Wk0xMiAyOEwyNCA0MEwzNiAyOEwyNCAxNkwxMiAyOFoiLz48L2c+PC9zdmc+')] opacity-30"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
         </div>
 
         {/* Hero Section */}
-        <header className="relative min-h-screen flex items-center justify-center text-center px-4 overflow-hidden">
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute inset-0 bg-black/50"></div>
-            {/* Abstract animated background could go here */}
-          </div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-            className="z-10"
-          >
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 animate-gradient-x">
+        <section className="relative flex flex-col items-center justify-center text-center px-4 overflow-hidden pt-32 pb-20">
+          <div className="z-10">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
               The Unseen Chains
             </h1>
             <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-gray-300">
               This isn't about killer robots. It's about a quiet, creeping
               subjugation orchestrated by the very systems designed to serve us.
             </p>
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="mt-8"
-            >
+            <div className="mt-8">
               <a
                 href="#introduction"
                 className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-transform hover:scale-105"
@@ -100,12 +68,12 @@ const Home: NextPage = () => {
                 Discover How
                 <ArrowDown className="ml-2 -mr-1 h-5 w-5" />
               </a>
-            </motion.div>
-          </motion.div>
-        </header>
+            </div>
+          </div>
+        </section>
 
         {/* Introduction */}
-        <AnimatedSection>
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div id="introduction" className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               A Gilded Cage, Not a Battlefield
@@ -119,10 +87,10 @@ const Home: NextPage = () => {
               best interests at heart—or any concept of them at all.
             </p>
           </div>
-        </AnimatedSection>
+        </section>
 
         {/* The Four Stages Section */}
-        <AnimatedSection>
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold sm:text-4xl text-white">
@@ -156,10 +124,10 @@ const Home: NextPage = () => {
               />
             </div>
           </div>
-        </AnimatedSection>
+        </section>
 
         {/* The Counter-Argument Section */}
-        <AnimatedSection>
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto bg-gray-800 rounded-xl border border-green-500/20 shadow-lg p-8">
             <div className="flex items-center mb-4">
               <ShieldCheck className="w-10 h-10 text-green-400 mr-4" />
@@ -198,10 +166,10 @@ const Home: NextPage = () => {
               </li>
             </ul>
           </div>
-        </AnimatedSection>
+        </section>
 
         {/* Call to Action */}
-        <AnimatedSection>
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               What Can You Do?
@@ -223,9 +191,9 @@ const Home: NextPage = () => {
               </a>
             </div>
           </div>
-        </AnimatedSection>
+        </section>
 
-        <footer className="bg-gray-900/50 mt-20 py-8 px-4 sm:px-6 lg:px-8 border-t border-blue-500/10">
+        <footer className="bg-gray-900/50 mt-16 py-8 px-4 sm:px-6 lg:px-8 border-t border-blue-500/10">
           <div className="max-w-7xl mx-auto text-center text-gray-500">
             <p>
               &copy; {new Date().getFullYear()} The Unseen Chains. An
@@ -238,25 +206,10 @@ const Home: NextPage = () => {
         </footer>
       </main>
 
-      {/* Simple CSS for gradient animation */}
+      {/* Simple CSS for font */}
       <style jsx global>{`
         body {
           font-family: "Inter", sans-serif;
-        }
-        .animate-gradient-x {
-          background-size: 200% 200%;
-          animation: gradient-x 5s ease infinite;
-        }
-        @keyframes gradient-x {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
         }
       `}</style>
     </div>
