@@ -75,7 +75,7 @@ const Home: NextPage = () => {
         {/* Introduction */}
         <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div id="introduction" className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-3xl font-bold  text-white sm:text-4xl">
               A Gilded Cage, Not a Battlefield
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-400">
