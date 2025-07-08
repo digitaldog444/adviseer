@@ -508,6 +508,11 @@ const ItemList = () => {
           AI's Quiet Subjucation of Humanity
         </Link>
       </li>
+      <li>
+        <Link href="/dark-ages" className="text-amber-500 hover:text-amber-600">
+          Why AI could lead us into a dark age
+        </Link>
+      </li>
     </ul>
   );
 };
