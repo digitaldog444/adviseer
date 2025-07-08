@@ -165,14 +165,7 @@ const UnseenChains = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() =>
-                document
-                  .getElementById("intro")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-              className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold hover:from-purple-500 hover:to-blue-500 transform hover:scale-105 transition-all duration-300 flex items-center justify-center"
-            >
+            <button className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold hover:from-purple-500 hover:to-blue-500 transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
               Explore the Warning
               <ChevronDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </button>
